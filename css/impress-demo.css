@@ -696,3 +696,49 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+
+.step > footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+    height: 50px;
+    color: #dddddd;
+    padding: 5px 20px;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #222222;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #282828;
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(top, #333333 0%, #1c1c1c 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #333333 0%, #1c1c1c 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(top, #333333 0%, #1c1c1c 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #333333), color-stop(1, #1c1c1c));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #333333 0%, #1c1c1c 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to bottom, #333333 0%, #1c1c1c 100%);
+}
+.step > footer > span {
+    font-weight: 700;
+    text-shadow: 0 -1px 0 #0e0e0e;
+    font-size: 17px;
+    color: #424242;
+    text-transform: lowercase;
+}
+.step > footer > span.first {
+    color: #5b5b5b;
+    font-size: 21px;
+}
+.step > footer > span.second {
+    text-transform: uppercase;
+}
+.step > footer > span.third {
+}
