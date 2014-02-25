@@ -85,7 +85,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
-    background: #666666;
+    background: #ffffff;
     /* background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#11631f), to(#1b9836)); */
 }
 
@@ -160,7 +160,7 @@ a:focus {
 
 .step {
     position: relative;
-    width: 900px;
+    width: 1100px;
     padding: 40px;
     margin: 20px auto;
 
@@ -181,8 +181,8 @@ a:focus {
     Basically we remove the margin and make inactive steps a little bit transparent.
 */
 .impress-enabled .step {
-    margin: 0;
-    opacity: 0.3;
+    margin: 20px 0 0 0;
+    opacity: 0.1;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -204,8 +204,8 @@ a:focus {
 .slide {
     display: block;
 
-    width: 900px;
-    height: 700px;
+    width: 1200px;
+    height: 675px;
     padding: 40px 60px;
 
     background-color: white;
@@ -245,36 +245,36 @@ a:focus {
     3D positioning along Z axis.
 */
 
-#title {
-    padding: 0;
-}
+/*#title {*/
+    /*padding: 0;*/
+/*}*/
 
-#title .try {
-    font-size: 64px;
-    position: absolute;
-    top: -0.5em;
-    left: 1.5em;
+/*#title .try {*/
+    /*font-size: 64px;*/
+    /*position: absolute;*/
+    /*top: -0.5em;*/
+    /*left: 1.5em;*/
 
-    -webkit-transform: translateZ(20px);
-    -moz-transform:    translateZ(20px);
-    -ms-transform:     translateZ(20px);
-    -o-transform:      translateZ(20px);
-    transform:         translateZ(20px);
-}
+    /*-webkit-transform: translateZ(20px);*/
+    /*-moz-transform:    translateZ(20px);*/
+    /*-ms-transform:     translateZ(20px);*/
+    /*-o-transform:      translateZ(20px);*/
+    /*transform:         translateZ(20px);*/
+/*}*/
 
-#title h1 {
-    font-size: 190px;
+/*#title h1 {*/
+    /*font-size: 190px;*/
 
-    -webkit-transform: translateZ(50px);
-    -moz-transform:    translateZ(50px);
-    -ms-transform:     translateZ(50px);
-    -o-transform:      translateZ(50px);
-    transform:         translateZ(50px);
-}
+    /*-webkit-transform: translateZ(50px);*/
+    /*-moz-transform:    translateZ(50px);*/
+    /*-ms-transform:     translateZ(50px);*/
+    /*-o-transform:      translateZ(50px);*/
+    /*transform:         translateZ(50px);*/
+/*}*/
 
-#title .footnote {
-    font-size: 32px;
-}
+/*#title .footnote {*/
+    /*font-size: 32px;*/
+/*}*/
 
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
@@ -522,7 +522,6 @@ a:focus {
     cursor: pointer;
 }
 
-
 /*
     Now, when we have all the steps styled let's give users a hint how to navigate
     around the presentation.
@@ -698,9 +697,10 @@ a:focus {
 */
 
 body {
-    background: #ccc;
+    background: #fff;
 }
 header {
+    z-index: 1;
     position: absolute;
     left: 0;
     right: 0;
@@ -729,3 +729,197 @@ header img {
     width: 200px;
 }
 
+
+
+/* Custom stuff for complexity presentation */
+
+.cover-up {
+    /*border: 1px solid black;*/
+    background: white;
+    position: absolute;
+    left: -450px;
+    top: -300px;
+    width: 5200px;
+    height: 2700px;
+    z-index: 0;
+}
+
+.slide, .step {
+    font-family: Arial, Verdana, sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+p i {
+    margin-left: 50px;
+}
+
+.source {
+    font-size: 35px;
+    font-style: italic;
+    color: #999;
+}
+
+.slide h1, .step h1 {
+    /*margin: 10px 0 40px 0;*/
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 60px;
+    color: #555;
+}
+
+.slide h2, .step h2 {
+    margin: 10px 0 40px 0;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 40px;
+    color: #555;
+}
+
+.step ul, .step ol {
+    font-family: Arial, Verdana, sans-serif;
+    line-height: 1.9em;
+    font-size: 45px;
+    margin-left: 50px;
+    margin-top: 70px;
+    color: #555;
+}
+
+i.fa {
+    margin-right: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+#title h1 {
+    font-size: 100px;
+    font-family: Arial, Verdana, sans-serif;
+    /*margin: 120px 0 0 0;*/
+    text-align: center;
+    line-height: 0.95em;
+    color: #444;
+}
+
+#title h1 b {
+    font-size: 121px;
+}
+
+#title h2 {
+    font-size: 28px;
+    font-family: Arial, Arial, Verdana, sans-serif;
+    margin: 60px 0 0 0;
+    text-align: center;
+}
+
+#video {
+    text-align: center;
+}
+
+#how h1 {
+    margin-top: -80px;
+}
+
+#h264 {
+    text-align: center;
+}
+
+#h264 .legend {
+    text-align: left;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#h264 .legend .h264 {
+    color: #FDB45C;
+}
+
+#h264 .source {
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.screenshot {
+    background: url(/mac-screenshot-master.png) center bottom no-repeat ;
+    height: 760px;
+    background-size: 1280px;
+}
+
+.screenshot iframe {
+    position: absolute;
+    top: 147px;
+    left: 66px;
+    width: 947px;
+    height: 537px;
+}
+
+#html5-events .source {
+    position: absolute;
+    bottom: 2px;
+    right: 120px;
+    color: #666;
+}
+
+#common-formats {
+    text-align: center;
+
+}
+
+#common-formats ul {
+    margin: 0;
+}
+
+.impress-on-codecs-overview #containers-and-codecs, .impress-on-codecs-overview #containers,
+.impress-on-codecs-overview #codecs, .impress-on-codecs-overview #common-formats, .impress-on-codecs-overview #h264 {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.impress-on-containers-and-codecs-repeat #containers-and-codecs {
+    opacity: 1;
+}
+
+.impress-on-how-repeat #how {
+    opacity: 1;
+}
+
+#containers p.source, #codecs p.source {
+    margin-top: 40px;
+}
+
+#min img, #medium img, #max img {
+    width: 90%;
+}
+
+.impress-on-setup-overview #min, .impress-on-setup-overview #medium, .impress-on-setup-overview #max {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#player-technologies {
+    text-align: center;
+}
+
+#player-technologies img {
+    margin-top: 20px;
+}
+
+.impress-on-player-technologies-overview #flash, .impress-on-player-technologies-overview #html5,
+.impress-on-player-technologies-overview #html5-events, .impress-on-player-technologies-overview #dash {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.impress-on-player-technologies-repeat #player-technologies {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.impress-on-how-repeat-1 #how {
+    opacity: 1;
+}
+
+.impress-on-infrastructure-title-repeat #infrastructure-title {
+    opacity: 1;
+}
