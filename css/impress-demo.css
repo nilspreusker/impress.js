@@ -225,6 +225,7 @@ a:focus {
 
 
 .impress-enabled          { pointer-events: none }
+.impress-enabled #impress { pointer-events: auto }
 
 body {
     background: #fff;
@@ -288,10 +289,8 @@ p i {
 }
 
 .slide h1, .step h1 {
-    /*margin: 10px 0 40px 0;*/
     font-family: Arial, Verdana, sans-serif;
     font-size: 60px;
-    color: #555;
 }
 
 .slide h2, .step h2 {
@@ -321,10 +320,8 @@ i.fa {
 #title h1 {
     font-size: 100px;
     font-family: Arial, Verdana, sans-serif;
-    /*margin: 120px 0 0 0;*/
     text-align: center;
     line-height: 0.95em;
-    color: #444;
 }
 
 #title h1 b {
@@ -453,6 +450,7 @@ i.fa {
     background: url(http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png) no-repeat top right;
 }
 
+.impress-on-player-technologies-overview #state-of-html5, .impress-on-player-technologies-overview #jsmpg,
 .impress-on-player-technologies-overview #flash, .impress-on-player-technologies-overview #html5,
 .impress-on-player-technologies-overview #html5-events, .impress-on-player-technologies-overview #dash {
     opacity: 1;
