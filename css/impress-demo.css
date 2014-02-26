@@ -814,6 +814,10 @@ i.fa {
     text-align: center;
 }
 
+#video video {
+    margin: 20px 0 0 -40px;
+}
+
 #how h1 {
     margin-top: -80px;
 }
@@ -903,6 +907,22 @@ i.fa {
 
 #player-technologies img {
     margin-top: 20px;
+}
+
+#flash {
+    background: url(http://upload.wikimedia.org/wikipedia/commons/3/32/Adobe_Flash_Player_v11_icon.png) no-repeat top right;
+}
+
+#flash ul li .source, #html5 ul li .source {
+    font-size: 30px;
+    font-style: italic;
+    color: #999;
+    line-height: 1.3em;
+    margin: -10px 0 0 48px;
+}
+
+#html5 {
+    background: url(http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png) no-repeat top right;
 }
 
 .impress-on-player-technologies-overview #flash, .impress-on-player-technologies-overview #html5,
